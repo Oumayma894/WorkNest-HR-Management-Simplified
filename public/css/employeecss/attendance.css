@@ -1,0 +1,110 @@
+:root {
+  --primary-color: #8635FD;
+  --blue-light: #E9F0FF;
+  --blue-dark: #070127;
+  --blue-slate: #414753;
+  --blue-muted: #C5C2DA;
+  --blue-white: #FFFFFF;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--blue-light);
+  color: var(--blue-dark);
+}
+
+h2, h5 {
+  color: var(--blue-dark);
+}
+
+.card {
+  background-color: var(--blue-white);
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.card h5 {
+  font-weight: 600;
+  color: var(--blue-dark);
+}
+
+.btn-success {
+  background-color: var(--primary-color);
+  border: none;
+}
+
+.btn-danger {
+  background-color: #ff4d4d;
+  border: none;
+}
+
+.btn-success:hover,
+.btn-danger:hover {
+  opacity: 0.9;
+}
+
+.progress {
+  background-color: var(--blue-muted);
+  height: 8px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  background-color: var(--primary-color);
+}
+
+.progress-bar.bg-info {
+  background-color: #4cc9f0;
+}
+
+.progress-bar.bg-success {
+  background-color: #40c057;
+}
+
+.table thead {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.table {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.table td, .table th {
+  vertical-align: middle;
+}
+
+.list-group-item {
+  background-color: var(--blue-white);
+  border: none;
+  padding: 0.75rem 1rem;
+  color: var(--blue-slate);
+  font-weight: 500;
+}
+
+.list-group-item strong {
+  color: var(--blue-dark);
+}
+
+.form-inline .form-control {
+  margin-right: 0.75rem;
+}
+
+input[type="date"],
+select {
+  background-color: var(--blue-white);
+  border: 1px solid var(--blue-muted);
+  padding: 8px;
+  border-radius: 6px;
+  color: var(--blue-dark);
+}
+
+input[type="date"]:focus,
+select:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(134, 53, 253, 0.2);
+}
